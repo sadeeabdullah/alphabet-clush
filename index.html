@@ -22,8 +22,17 @@
         </section>
 
         <!-- display starts here -->
-        <section class="display">
-            <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-white bg-opacity-70">1024×320</div>
+        <section class="flex flex-col justify-center items-center gap-6 pt-12">
+            <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-white bg-opacity-70 ">
+                <!-- top text -->
+                 <div class="flex justify-center text-white ">
+                    <p class="bg-[#2F2941] px-6 py-4 rounded-b-xl">Don't watch keyboard  while playing...</p>
+                 </div>
+                 <!-- output text -->
+                  <div class=" h-full flex items-center justify-center">
+                    <p class="text-9xl font-bold text-black">Y</p>
+                  </div>
+            </div>
             <!-- key board here -->
             <div>
                 <div class="my-1 flex w-full justify-center gap-1">
@@ -61,7 +70,18 @@
               </div>
             </div>
              <!-- life score here -->
-              <div class="life"></div>
+              <div class=" flex justify-between w-3/4">
+                <button class="btn bg-[#894189] rounded-full border-0 text-white font-bold ">
+                    Life
+                    <img src="images/heart.svg" alt="">
+                    <span>1</span>
+                </button>
+                <button class="btn bg-[#360490] rounded-full border-0 text-white ">
+                    Score
+                    <img src="images/dollar.svg " alt="">
+                    <span>1</span>
+                </button>
+              </div>
         </section>
         <!-- display starts here -->
 

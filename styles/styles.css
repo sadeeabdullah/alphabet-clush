@@ -8,3 +8,12 @@
 .font-anton{
     font-family: "Anton", sans-serif;
 }
+.box {
+    background: linear-gradient(135deg, rgba(55, 0, 110, 0.8), rgba(100, 0, 200, 0.8));
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

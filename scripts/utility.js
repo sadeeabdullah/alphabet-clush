@@ -7,10 +7,15 @@ function showElement(elementId){
     document.getElementById(elementId).classList.remove('hidden')
 }
 
+
 function randomAlphabets() {
-    console.log('heelo')
     const alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    const randomIndex = Math.round(Math.random()*alphabets.length)
+    const randomIndex = Math.floor(Math.random()*alphabets.length)
     const randomAlp = alphabets[randomIndex]
     return randomAlp;
+}
+
+function addBg(elementId){
+    console.log(elementId)
+    document.getElementById(elementId).classList.add('bg-orange-400')
 }

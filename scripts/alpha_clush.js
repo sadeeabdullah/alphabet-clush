@@ -5,4 +5,5 @@ function play(){
     // displaySection.classList.remove('hidden')
     hideElement('home-section')
     showElement('display-section')
+    randomAlphabets()
 }                                     

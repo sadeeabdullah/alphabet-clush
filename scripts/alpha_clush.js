@@ -3,8 +3,16 @@
         const pressedLetter = e.key;
         const currentLetter = document.getElementById('random-alpha').innerText;
         console.log(pressedLetter,currentLetter)
-    }     
+        if (pressedLetter === currentLetter) {
+            removeBackgroundColorById(currentLetter)
+            continueGame();
+        } else {
+            alert('you have clicked the wrong letter')
+        }
+    } 
+
     document.addEventListener('keyup',addKeyUp)
+
 
     function continueGame() {
         //setting the random alpahabet as the text on 
@@ -12,17 +20,15 @@
 
         const currentAlphabet = document.getElementById('random-alpha');
         currentAlphabet.innerText= randomAlpha;
-        
-       
-        
+    
         // add background to the random alphabet on keyboard
         setBackgroundColorById(randomAlpha)
     }
-    function play(){     
 
+
+    function play(){     
         hideElement('home-section')
         showElement('display-section')
         continueGame()
-        
     } 
   

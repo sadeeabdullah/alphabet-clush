@@ -1,5 +1,8 @@
-                                    
-
+          
+    function addKeyUp() {
+        console.log('something is pressed on the keyboard')
+    }     
+    document.addEventListener('keyup',addKeyUp)
 
     function continueGame() {
         //setting the random alpahabet as the text on 

@@ -1,6 +1,8 @@
           
-    function addKeyUp() {
-        console.log('something is pressed on the keyboard')
+    function addKeyUp(e) {
+        const pressedLetter = e.key;
+        const currentLetter = document.getElementById('random-alpha').innerText;
+        console.log(pressedLetter,currentLetter)
     }     
     document.addEventListener('keyup',addKeyUp)
 

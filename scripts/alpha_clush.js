@@ -1,7 +1,7 @@
           
     function addKeyUp(e) {
         const pressedLetter = e.key;
-        const currentLetter = document.getElementById('random-alpha').innerText;
+        const currentLetter = document.getElementById('random-alpha').innerText.toLowerCase();
         console.log(pressedLetter,currentLetter)
         if (pressedLetter === currentLetter) {
             removeBackgroundColorById(currentLetter)
@@ -19,7 +19,8 @@
         const randomAlpha = randomAlphabets();
 
         const currentAlphabet = document.getElementById('random-alpha');
-        currentAlphabet.innerText= randomAlpha;
+        currentAlphabet.innerText= randomAlpha.toUpperCase();
+        x
     
         // add background to the random alphabet on keyboard
         setBackgroundColorById(randomAlpha)

@@ -4,6 +4,9 @@
         const currentLetter = document.getElementById('random-alpha').innerText.toLowerCase();
         console.log(pressedLetter,currentLetter)
         if (pressedLetter === currentLetter) {
+
+            // update score :
+            //  addd new score after creating a new right click
             removeBackgroundColorById(currentLetter)
             continueGame();
         } else {
@@ -20,7 +23,7 @@
 
         const currentAlphabet = document.getElementById('random-alpha');
         currentAlphabet.innerText= randomAlpha.toUpperCase();
-        x
+        
     
         // add background to the random alphabet on keyboard
         setBackgroundColorById(randomAlpha)

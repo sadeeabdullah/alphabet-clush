@@ -7,7 +7,7 @@
 
             // update score :
             //  addd new score after creating a new right click
-            getInnerValue('life-score')
+            // getInnerValue('life-score')
             removeBackgroundColorById(currentLetter)
             continueGame();
         } else {

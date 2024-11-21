@@ -8,6 +8,11 @@
             // update score :
             //  addd new score after creating a new right click
             // getInnerValue('life-score')
+            console.log('adding new point to the score')
+            const currentValue = getInnerValue('current-score');
+            const updatedValue = currentValue + 1;
+            console.log(updatedValue)
+            console.log(currentValue)
             removeBackgroundColorById(currentLetter)
             continueGame();
         } else {

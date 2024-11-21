@@ -17,12 +17,11 @@ function removeBackgroundColorById(elementId){
     element.classList.remove('bg-orange-400');
 }
 
-// function getInnerValue(elementId) {
-//     const element = document.getElementById(elementId);
-//     const innerValue = parseInt(element.innerText)
-//     console.log(innerValue)
-
-// }
+function getInnerValue(elementId) {
+    const element = document.getElementById(elementId);
+    const innerValue = parseInt(element.innerText)
+    return innerValue;
+}
 
 function randomAlphabets() {
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';

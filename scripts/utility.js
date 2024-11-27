@@ -1,9 +1,7 @@
 function hideElement(elementId){
-    console.log('hide element triggered')
     document.getElementById(elementId).classList.add('hidden')
 }
 function showElement(elementId){
-    console.log('show element triggered')
     document.getElementById(elementId).classList.remove('hidden')
 }
 
@@ -21,6 +19,11 @@ function getInnerValue(elementId) {
     const element = document.getElementById(elementId);
     const innerValue = parseInt(element.innerText)
     return innerValue;
+}
+
+function setTextElementValue(elementId,value) {
+    const element = document.getElementById(elementId);
+    element.innerText = value;
 }
 
 function randomAlphabets() {

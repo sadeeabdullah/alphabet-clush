@@ -2,17 +2,13 @@
     function addKeyUp(e) {
         const pressedLetter = e.key;
         const currentLetter = document.getElementById('random-alpha').innerText.toLowerCase();
-        console.log(pressedLetter,currentLetter)
         if (pressedLetter === currentLetter) {
 
             // update score :
             //  addd new score after creating a new right click
-            // getInnerValue('life-score')
-            console.log('adding new point to the score')
             const currentValue = getInnerValue('current-score');
-            const updatedValue = currentValue + 1;
-            console.log(updatedValue)
-            console.log(currentValue)
+            const newValue = currentValue + 1;
+            setTextElementValue('current-score',newValue)
             removeBackgroundColorById(currentLetter)
             continueGame();
         } else {

@@ -7,7 +7,7 @@
             // update score :
             //  addd new score after creating a new right click
             const currentValue = getInnerValue('current-score');
-            g
+            const newValue = currentValue + 1 ;
             setTextElementValue('current-score',newValue)
             removeBackgroundColorById(currentLetter)
             continueGame();
@@ -47,7 +47,6 @@
         showElement('display-section')
 
         //set 0 on the score and 5 on the life after clicking to play new game
-
         setTextElementValue('current-score',0);
         setTextElementValue('life-score',5);
 
@@ -57,4 +56,14 @@
     function gameOver() {
         hideElement('display-section');
         showElement('final-score')
+        const lastScore = document.getElementById('current-score').innerText;
+        console.log(lastScore)
+        //set the score
+        setTextElementValue('last-score',lastScore)
+        console.log(lastScore)
+
+        //clear the last selection on the play ground after game over
+        const lastAlpha =getInnerText('random-alpha')
+        console.log(lastAlpha)
+        removeBackgroundColorById(lastAlpha)
     }

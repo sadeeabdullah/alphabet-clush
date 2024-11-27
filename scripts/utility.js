@@ -20,6 +20,11 @@ function getInnerValue(elementId) {
     const innerValue = parseInt(element.innerText)
     return innerValue;
 }
+function getInnerText(elementId) {
+    const element = document.getElementById(elementId);
+    const innerValue = element.innerText;
+    return innerValue.toLocaleLowerCase();
+}
 
 function setTextElementValue(elementId,value) {
     const element = document.getElementById(elementId);

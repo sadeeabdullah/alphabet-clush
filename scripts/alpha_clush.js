@@ -17,7 +17,6 @@
             setTextElementValue('life-score',updatedScore)
             
             if (updatedScore== 0) {
-                console.log('your game has been over')
                 gameOver()
             }
             
@@ -40,9 +39,18 @@
     }
 
 
-    function play(){     
+    function play(){  
+        
+        // show the playground
         hideElement('home-section')
+        hideElement('final-score')
         showElement('display-section')
+
+        //set 0 on the score and 5 on the life after clicking to play new game
+
+        setTextElementValue('current-score',0);
+        setTextElementValue('life-score',5);
+
         continueGame()
     } 
   

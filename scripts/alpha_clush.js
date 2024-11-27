@@ -1,6 +1,9 @@
           
     function addKeyUp(e) {
         const pressedLetter = e.key;
+        if(pressedLetter == 'Escape'){
+            gameOver()
+        }
         const currentLetter = document.getElementById('random-alpha').innerText.toLowerCase();
         if (pressedLetter === currentLetter) {
 

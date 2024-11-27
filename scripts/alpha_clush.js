@@ -13,6 +13,9 @@
             continueGame();
         } else {
             alert('you have clicked the wrong letter')
+            const currentLife = getInnerValue('life-score');
+            const updatedScore = currentLife - 1 ;
+            setTextElementValue('life-score',updatedScore)
         }
     } 
 

@@ -7,15 +7,20 @@
             // update score :
             //  addd new score after creating a new right click
             const currentValue = getInnerValue('current-score');
-            const newValue = currentValue + 1;
+            g
             setTextElementValue('current-score',newValue)
             removeBackgroundColorById(currentLetter)
             continueGame();
         } else {
-            alert('you have clicked the wrong letter')
             const currentLife = getInnerValue('life-score');
             const updatedScore = currentLife - 1 ;
             setTextElementValue('life-score',updatedScore)
+            
+            if (updatedScore== 0) {
+                console.log('your game has been over')
+                gameOver()
+            }
+            
         }
     } 
 
@@ -41,3 +46,7 @@
         continueGame()
     } 
   
+    function gameOver() {
+        hideElement('display-section');
+        showElement('final-score')
+    }

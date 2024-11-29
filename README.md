@@ -14,6 +14,7 @@ You can play the game live here: [https://type.sadeeabdullah.com](https://type.s
 - Simple and easy-to-use interface.
 - Real-time feedback on typing speed.
 - No back-end required, all functionalities are handled on the front-end.
+- Press Enter to open the play ground and you can anytime quite the game by pressing Esc.
 
 ## Technologies Used
 
